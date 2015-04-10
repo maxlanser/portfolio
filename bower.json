@@ -1,0 +1,6 @@
+{
+  "name": "dz3",
+  "dependencies": {
+    "jquery": "1.11"
+  }
+}
