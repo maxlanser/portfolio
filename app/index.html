@@ -25,13 +25,18 @@
 	<meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
 	<meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
-	<link rel="stylesheet" href="css/main.css"> 
+	<link rel="stylesheet" href="css/main.css">
+	<script src="bower/modernizr/modernizr.js"></script> 
 </head>
 <body>
-<div class="wrap">
+<!--[if lt IE 8]>
+    <p class="browserupgrade">Вы используете <strong>устаревший</strong> веб-браузер. Пожалуйста<a href="http://browsehappy.com/"> обновите </a> свой веб-браузер чтоб иметь больше возможностей.</p>
+<![endif]-->
+<div class="wrap clearfix">
 	<header class="header">
-		<div class="header-in">
+		<div class="header-in clearfix">
 			<a title="Сайт-портфолио веб-разработчика Погребного Максима" href="/" class="logo">
 				<img src="img/my_logo.png">
 				<span>Сайт-портфолио веб-разработчика Погребного Максима</span>
@@ -48,9 +53,9 @@
 		<div class="main-in">
 			<aside class="left">
 				<ul class="menu">
-					<li class="active"><span><a title="Кратко обо нме" href="">Обо мне</a></span></li>
-					<li><span><a title="Выполненные мною проекты" href="">Мои работы</a></span></li>
-					<li><span><a title="Ка со мной связаться" href="">Связаться со мной</a></span></li>
+					<li class="active"><a title="Кратко обо нме" href=""><span>Обо мне</span></a></li>
+					<li><a title="Выполненные мною проекты" href=""><span>Мои работы</span></a></li>
+					<li><a title="Ка со мной связаться" href=""><span>Связаться со мной</span></a></li>
 				</ul>
 				<address>
 					<div>Контакты</div>

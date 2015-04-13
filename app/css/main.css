@@ -1,3 +1,82 @@
+@import "fonts/fonts.css";
+@import "boilerplate_main.css";
+
+
 body {
 	background: url(../img/bg.png);
+	font-family: fira_sansbook;
+	font-weight: normal;
+	font-style: normal;
 }
+ul, li {
+	list-style: none;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+.left, .section-heading {
+}
+
+.footer {
+	font-family: fira_sanslight;
+	font-weight: normal;
+	font-style: normal;
+}
+.wrap {
+	margin: 0 auto;
+}
+	.header {
+		background: #eff3f7 url(../img/gradient_line.png) bottom center no-repeat;
+	}
+	.header-in {
+		width: 1200px;
+		margin: 0 auto;
+		padding: 36px 0;
+	}
+		.logo {
+			float: left;
+			text-decoration: none;
+			display: block;
+		}
+			.logo span {
+				text-indent: -9999px;
+				display: block;
+				width: 0px;
+				height: 0px;
+			}
+		.socials {
+			float: right;
+			margin: 0px;
+			padding: 0px;
+		}
+			.socials li {
+				list-style:none;
+				float: left;
+				margin: 0px 0px 0px 24px;
+				padding: 0px;
+			}
+			.socials li a {
+				text-indent: -9999px;
+				display: block;
+				height: 47px;
+				width: 47px;
+				background: url(../img/spritesheet.png) no-repeat;
+			}
+			.socials .vk-ico a { background-position: -5px -769px; }
+			.socials .vk-ico a:hover { background-position: -5px -826px; }
+
+			.socials .tw-ico a { background-position: -5px -621px; }
+			.socials .tw-ico a:hover { background-position:-5px -678px; }
+
+			.socials .fb-ico a { background-position: -5px -124px; }
+			.socials .fb-ico a:hover { background-position: -5px -181px; }
+
+			.socials .git-ico a { background-position: -5px -238px; }
+			.socials .git-ico a:hover { background-position: -5px -295px; }
