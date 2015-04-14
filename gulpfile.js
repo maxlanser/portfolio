@@ -2,6 +2,7 @@ var gulp = require("gulp"),
 	connect = require("gulp-connect"),
 	opn = require("opn");
 
+
 //Запуск локального сервера
 gulp.task('connect', function() {
   connect.server({
@@ -22,6 +23,7 @@ gulp.task('html', function () {
 gulp.task('css', function () {
   gulp.src('./app/css/*.css')
     .pipe(connect.reload());
+    
 });
 
 //слежка за файлами 
