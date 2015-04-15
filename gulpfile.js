@@ -1,6 +1,8 @@
 var gulp = require("gulp"),
 	connect = require("gulp-connect"),
-	opn = require("opn");
+	opn = require("opn"),
+  autoprefixer = require('gulp-autoprefixer'),
+  concatCss = require('gulp-concat-css');
 
 
 //Запуск локального сервера
@@ -22,6 +24,11 @@ gulp.task('html', function () {
 //работа с CSS
 gulp.task('css', function () {
   gulp.src('./app/css/*.css')
+    .pipe(autoprefixer({
+              browsers: ['last 30 version', 'Opera > 5', 'Chrome > 20', 'ff > 10', 'ie > 7'],
+              cascade: true
+          }))
+    .pipe(gulp.dest('./app/css/'))
     .pipe(connect.reload());
     
 });
