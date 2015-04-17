@@ -30,6 +30,13 @@ gulp.task('css', function () {
           }))
     .pipe(gulp.dest('./app/css/'))
     .pipe(connect.reload());
+   gulp.src('./app/bower/tooltipster/css/themes/*.css')
+    .pipe(autoprefixer({
+              browsers: ['last 30 version', 'Opera > 5', 'Chrome > 20', 'ff > 10', 'ie > 7'],
+              cascade: true
+          }))
+    .pipe(gulp.dest('./app/bower/tooltipster/css/themes/'))
+    .pipe(connect.reload());
     
 });
 

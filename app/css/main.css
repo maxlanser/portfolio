@@ -439,7 +439,12 @@ input, textarea {
 			.contact-form input:focus, .contact-form textarea:focus {
 				outline: none;
 			}
-
+			.contact-form .input {
+				width: 100%
+			}
+			.contact-form .textarea {
+				width: 100%;
+			}
 			.contact-form .name {
 				float: left;
 				width: 192px;
