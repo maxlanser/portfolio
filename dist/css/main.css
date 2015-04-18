@@ -1,0 +1,932 @@
+
+@font-face {
+    font-family: 'fira_sanslight';
+    src: url('firasans-light.eot');
+    src: url('firasans-light.eot?#iefix') format('embedded-opentype'),
+         url('firasans-light.woff') format('woff'),
+         url('firasans-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('firasans-book.eot');
+    src: url('firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('firasans-book.woff') format('woff'),
+         url('firasans-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sansmedium';
+    src: url('firasans-medium.eot');
+    src: url('firasans-medium.eot?#iefix') format('embedded-opentype'),
+         url('firasans-medium.woff') format('woff'),
+         url('firasans-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sanslight_italic';
+    src: url('firasans-lightitalic.eot');
+    src: url('firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('firasans-lightitalic.woff') format('woff'),
+         url('firasans-lightitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_condensedSBd';
+    src: url('proximanovacond-semibold-webfont.eot');
+    src: url('proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanovacond-semibold-webfont.woff2') format('woff2'),
+         url('proximanovacond-semibold-webfont.woff') format('woff'),
+         url('proximanovacond-semibold-webfont.ttf') format('truetype'),
+         url('proximanovacond-semibold-webfont.svg#proxima_nova_condensedSBd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.tooltipster-portfolio {
+	-webkit-border-radius: 2px;
+	        border-radius: 2px; 
+	border: 1px solid #f97e76;
+	background: #f97e76;
+	color: #fff;
+}
+.tooltipster-portfolio .tooltipster-content {
+	font-family: fira_sansbook;
+	font-size: 13px;
+	line-height: 16px;
+	padding: 4px 12px;
+}  
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (-o-min-device-pixel-ratio: 5/4),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+html, body {
+	height: 100%;  
+}
+body {
+	font-family: fira_sansbook;
+	font-weight: normal;
+	font-style: normal;
+	color: #4a545d;
+}
+ul, li {
+	list-style: none; 
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+input, textarea {
+	border:none;
+	background: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.left, .section-heading {
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.footer {
+	font-family: fira_sanslight;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 13px;
+}
+.wrap {
+	background: url(../img/bg.png);
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+  	min-height: 100%;
+  	padding-bottom: 113px;
+}
+	.header {
+		background: #eff3f7 url(../img/gradient_line.png) bottom center no-repeat;
+	}
+	.header-in {
+		width: 1200px;
+		margin: 0 auto;
+		padding: 35px 0 37px 0;
+	}
+		.logo {
+			float: left;
+			text-decoration: none;
+			display: block;
+		}
+			.logo span {
+				text-indent: -9999px;
+				display: block;
+				width: 0px;
+				height: 0px;
+			}
+		.socials {
+			float: right;
+			margin: 0px;
+			padding: 0px;
+		}
+			.socials li {
+				list-style:none;
+				float: left;
+				margin: 0px 0px 0px 24px;
+				padding: 0px;
+			}
+			.socials li a {
+				text-indent: -9999px;
+				display: block;
+				height: 47px;
+				width: 47px;
+				background: url(../img/spritesheet.png) no-repeat;
+			}
+			.socials .vk-ico a { background-position: -15px -1090px; }
+			.socials .vk-ico a:hover { background-position: -15px -1167px; }
+
+			.socials .tw-ico a { background-position: -15px -882px; }
+			.socials .tw-ico a:hover { background-position:-15px -959px; }
+
+			.socials .fb-ico a { background-position: -15px -194px; }
+			.socials .fb-ico a:hover { background-position: -15px -271px; }
+
+			.socials .git-ico a { background-position: -15px -348px; }
+			.socials .git-ico a:hover { background-position: -15px -425px; }
+
+.main {
+	width: 960px;
+	margin: 39px auto 0 auto;
+}
+.left {
+	width: 250px;
+	float: left;
+	font-size: 21px;
+}
+	.menu {
+		background: #eff3f7;
+		-webkit-border-radius: 5px;
+		        border-radius: 5px;
+		color: #959aa8;
+		overflow: hidden;
+		font-size: 21px;
+	}
+	.menu li {
+		padding: 0px 9px 0px 9px;
+	}
+	.menu li a {
+		display: block;
+		padding: 27px 0 23px 17px;
+		background: url(../img/menu_item_bottom.gif) bottom repeat-x;
+	}
+	.menu li a span {
+		display: block;
+		line-height: 23px;
+	}
+	.menu li.active {
+		background: #3ba8c0;
+		font-size: 22px;
+		margin: -2px 0 0 0;
+	}    
+	.menu li.active a {
+		padding: 29px 0 23px 17px;
+	}     
+	.menu li:hover a {
+		color: #3ba8c0;
+	}
+	.menu li.active a {
+		color: #fff;
+	}
+	.menu li.last a, .menu li.active a {
+		background: none;
+	}
+	.contacts {
+		margin: 23px 0 0 0;
+		background: #3ba8c0;
+		-webkit-border-radius: 5px;
+		        border-radius: 5px;
+		font-style: normal;
+		overflow: hidden;
+		color: #fff;
+	}
+	.contacts ul {
+		font-size: 17px;
+	}
+	.contacts a:hover {
+		text-decoration: underline;
+	}
+		.contacts li {
+			padding: 9px 0 7px 60px;
+			background: url(../img/spritesheet.png) no-repeat;
+		}
+		.contacts .heading {
+			padding: 9px 20px 2px 20px;
+		}
+		.contacts .toemail {
+			background-color: #41b9d4;
+			background-position: 12px -1290px;
+		}
+		.contacts .tophone {
+			background-color: #48cbe8;
+			background-position: 12px -1338px;
+		}
+		.contacts .toskype {
+			background-color: #51daf8;
+			background-position: 12px -1389px;
+		}
+.content {
+	width: 650px;
+	float: right;
+}
+	.content .section-heading {
+		font-size: 27px;
+		color:#3ba8c0;
+		line-height: 68px;
+		margin: 0px;
+		padding: 0px; 
+	}
+	.content .section-heading.clearfix {
+
+	}
+	.content .section-heading span {
+		display: block;
+		float: left;
+		background: url(../img/menu_item_bottom.gif) bottom repeat-x;
+		padding: 0 21px 0 23px;
+	} 
+	.abouts, .works, .contact-me {
+		-webkit-border-radius: 5px;
+		        border-radius: 5px;
+		background: #eff3f7;
+		margin: 0 0 24px 0px;
+	}
+		.article {
+			padding: 24px 55px 24px 55px;
+		} 
+		.my-foto{
+			width: 140px;
+			height: 140px;   
+			-webkit-border-radius: 70px;   
+			        border-radius: 70px;  
+			overflow: hidden;
+			border:4px solid #3ba8c0;
+			-webkit-box-shadow: 0px 0px 2px #3ba8c0;
+			        box-shadow: 0px 0px 2px #3ba8c0;
+			margin: 21px 0px 0px 0px; 
+		}
+		.about-me {
+			width: 365px;   
+		}
+			.skill-list {
+				font-size: 15px;
+			}
+			.skill-list li {
+				margin: 0px 0px 10px 0px;
+			}
+			.skill-list .label {
+				font-family: fira_sansmedium;
+				font-size: 17px;
+				margin: 0 10px 0 0;
+				float: left;
+			}
+				.skill-list ul {
+					float: left;
+					width: 50%;
+					color: #fff;
+					font-size: 14px;
+					font-family: proxima_nova_condensedSBd;
+					margin: 3px 0 0 0;
+					line-height: normal;
+				}
+				.skill-list ul li {
+					float: left;
+					background: url(../img/skills_bg_line.gif) center repeat-x;
+					-webkit-border-radius: 3px;
+					        border-radius: 3px;
+					 padding: 1px 14px 2px 14px;
+					 margin: 0 8px 9px 0;
+					/*background: rgb(59,168,192); /* Old browsers */
+					/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+					/*background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzNiYThjMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzNiYThjMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzJlOGNhMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+					background: -moz-linear-gradient(top,  rgba(59,168,192,1) 1%, rgba(59,168,192,1) 51%, rgba(46,140,162,1) 51%); /* FF3.6+ */
+					/*background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(59,168,192,1)), color-stop(51%,rgba(59,168,192,1)), color-stop(51%,rgba(46,140,162,1))); /* Chrome,Safari4+ */
+					/*background: -webkit-linear-gradient(top,  rgba(59,168,192,1) 1%,rgba(59,168,192,1) 51%,rgba(46,140,162,1) 51%); /* Chrome10+,Safari5.1+ */
+					/*background: -o-linear-gradient(top,  rgba(59,168,192,1) 1%,rgba(59,168,192,1) 51%,rgba(46,140,162,1) 51%); /* Opera 11.10+ */ /* IE10+ */
+					/*background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(59,168,192,1)), color-stop(51%, rgba(59,168,192,1)), color-stop(51%, rgba(46,140,162,1)));
+					/*background: -webkit-linear-gradient(top, rgba(59,168,192,1) 1%, rgba(59,168,192,1) 51%, rgba(46,140,162,1) 51%);
+					/*background: -o-linear-gradient(top, rgba(59,168,192,1) 1%, rgba(59,168,192,1) 51%, rgba(46,140,162,1) 51%);
+					/*background: linear-gradient(to bottom,  rgba(59,168,192,1) 1%,rgba(59,168,192,1) 51%,rgba(46,140,162,1) 51%); /* W3C */
+					/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 );  /* IE6-8 */ 
+					
+				}
+		.short-dscr {
+			background: url(../img/spritesheet.png) no-repeat;
+			padding: 0 0 0 67px;
+			margin: 0 0 16px 0;
+		}
+		.fontface .short-dscr {
+			line-height: 20px;
+		} 
+		.short-dscr.bag {
+			background-position: -11px -75px;
+		}
+		.short-dscr.cocked_hat {
+			background-position: -14px -137px;
+		}
+		.short-dscr.paper {
+			background-position: -6px -723px;
+		}
+			.short-dscr-hd {
+				font-size: 17px
+		}
+			.short-dscr-body {
+				font-size: 15px;
+			}
+
+	.works {
+		text-align: center;
+	}
+		.works .article {
+			padding: 33px 20px;
+			margin: 0 -30px 0 0;
+		}	
+		.item {
+			float: left;
+			width: 183px;
+			height: 200px;
+			margin: 0 30px 41px 0px;
+		}
+			.hover-box {
+			    -webkit-border-radius: 2px;
+			            border-radius: 2px;
+			    display: block;
+			    height: 100%;
+			    left: 0;
+			    position: absolute;
+			    top: 0;
+			    width: 100%;
+				background: rgba(1,108,168, 0.75);
+				opacity: 0;
+				-webkit-transform: scale(0);
+				   -moz-transform: scale(0);
+				    -ms-transform: scale(0);
+				     -o-transform: scale(0);
+				        transform: scale(0);
+				-webkit-transition: all 0.3s ease-in 0s;
+				   -moz-transition: all 0.3s ease-in 0s;
+				     -o-transition: all 0.3s ease-in 0s;
+				        transition: all 0.3s ease-in 0s;
+			}
+			.hover-box a {
+				color: #fff;
+				display: inline-block;
+				padding: 0 5px 0 5px;
+				position: relative;
+				top: 50px;
+				text-transform: lowercase;
+				font-size: 12px;
+				border: 2px solid #fff;
+				-webkit-border-radius: 4px;
+				        border-radius: 4px;
+				-webkit-box-shadow: 0px 0px 1px #fff, inset 0px 0px 1px #fff;
+				        box-shadow: 0px 0px 1px #fff, inset 0px 0px 1px #fff;
+
+			}
+			.item:hover .hover-box {
+				opacity:1;
+				-webkit-transform: scale(1);
+				   -moz-transform: scale(1);
+				    -ms-transform: scale(1);
+				     -o-transform: scale(1);
+				        transform: scale(1);
+ 				-webkit-transition-delay: 0s;
+ 				   -moz-transition-delay: 0s;
+ 				     -o-transition-delay: 0s;
+ 				        transition-delay: 0s;
+			}
+			.imgwrap {
+				height: 126px;
+				width: 179px;
+				-webkit-border-radius: 6px;
+				        border-radius: 6px;
+				border: 2px solid #3ba8c0;
+				position: relative;
+				overflow: hidden;
+				margin: 0 0 8px 0;
+			}
+			.no-csstransitions .hover-box {
+			    display: none;
+			    height: 100%;
+			    left: 0;
+			    position: absolute;
+			    top: 0;
+			    width: 100%;
+				background: url(../img/blue-dot.png);
+				
+			}
+			.no-csstransitions .item:hover .hover-box {
+				display: block;
+			}
+			.site-url {
+				font-family: fira_sanslight_italic;
+				font-size: 13px;
+				color: #3ba8c0;
+				margin: 0 0 6px 0;
+			}
+			.preview {
+				color: #4a545d;
+				font-family: fira_sanslight;
+				font-size: 15px;
+				line-height: 18px;
+			}
+			.item.add {
+				background: #edf8fc;
+				height: 126px;
+				border: 1px dashed #3ba8c0;
+				-webkit-border-radius: 6px;
+				        border-radius: 6px;
+				font-size: 13px;
+				font-family: fira_sanslight;
+				color: #3ba8c0;
+				cursor: pointer;
+				position: relative;
+			}
+			.item.add .ico {
+				display: block;
+				margin: 34px auto 0;
+				background: url(../img/spritesheet.png) no-repeat;
+				background-position: -15px -15px;
+				width: 32px;
+				height: 32px;
+			}
+			.item.add .addnew {
+				display: block;
+				margin: 11px 0 0 0;
+			}
+	
+	.contact-me {
+		padding: 0 0 30px 0;
+		overflow: hidden;
+	}
+		.contact-me .question {
+			color: #fff;
+			text-align: center;
+			overflow: hidden;
+			font-size:27px;
+			background:#48cbe8;
+			border-bottom: 17px solid #67dffa;
+			padding: 45px 0px 40px 0;
+			margin: 0 0 43px 0; 
+		}
+		.contact-form {
+			width: 402px;
+			margin: 0 auto;
+			font-family: fira_sanslight;
+		}
+			.contact-form .input, .contact-form .textarea {
+				border-style:solid; 
+			 	font-size:13px; 
+			 	border-width:1px; 
+			 	-webkit-border-radius:3px; 
+			 	        border-radius:3px; 
+			 	background-color:#fbfcfd; 
+			 	border-color:#48cbe8; 
+			 	color:#48cbe8; 
+			 	padding:9px;
+			}
+			.contact-form .input.error, .contact-form .textarea.error {
+			 	background-color:#fad2d1; 
+			 	border-color:#f97f76; 
+			 	color:#48cbe8; 
+			}
+
+			.contact-form label {
+				font-size: 19px;
+				color: #959aa8;
+				display: block;
+			}
+			.contact-form input:focus, .contact-form textarea:focus {
+				outline: none;
+			}
+			.contact-form .input {
+				width: 100%
+			}
+			.contact-form .textarea {
+				width: 100%;
+			}
+			.contact-form .name {
+				float: left;
+				width: 192px;
+			}
+
+			.contact-form .email {
+				float: right;
+				width: 192px;
+			}
+			.contact-form .text {
+				float: left;
+				width: 100%;
+				margin: 14px 0 0 0;
+			}
+				.text textarea {
+					width: 364px;
+				}
+			.contact-form .captcha {
+				float: left;
+				width: 100%;
+				margin: 14px 0 0 0;
+			}
+
+				.contact-form .captcha input  {
+					padding: 4px 9px;
+				}
+				.captcha-img {
+					float: left;
+					width: 192px;
+					border:1px solid #48cbe8; 
+				 	-webkit-border-radius:3px; 
+				 	        border-radius:3px; 
+				 	background-color:#fff; 
+				 	overflow: hidden;
+				 	text-align: center;
+				 	padding: 15px 0px;
+				}
+				.captcha-input {
+					float: right;
+					width: 192px;
+					padding: 20px 0 0 0px;
+				}
+			
+			.contact-form .buttons {
+				float: left;
+				width: 100%;
+				margin: 32px 0 0 0;
+				padding: 0 0 10px 0;
+				font-family: fira_sansbook;
+			}
+				.buttons .bnt-send-wr {
+					float: left;
+				}
+					.bnt-send-wr .btn-send {
+						-webkit-border-radius: 3;
+						  border-radius: 3px;
+						  -webkit-box-shadow: 0px 3px 0px #3ba8c0;
+						  box-shadow: 0px 3px 0px #3ba8c0;
+						  color: #ffffff;
+						  font-size: 19px;
+						  background: #48cbe8;
+						  padding: 0px 25px 1px 21px;
+						  text-decoration: none;
+					}
+					.bnt-send-wr .btn-send:hover {
+						background: #44bed9;
+  						text-decoration: none;
+					}
+				.buttons .bnt-clear-wr {
+					float: right;
+				}
+					.bnt-clear-wr .btn-clear {
+						-webkit-border-radius: 3;
+						  border-radius: 3px;
+						  -webkit-box-shadow: 0px 3px 0px #687b8f;
+						  box-shadow: 0px 3px 0px #687b8f;
+						  color: #ffffff;
+						  font-size: 19px;
+						  background: #849db5;
+						  padding: 0px 28px 1px 28px;
+						  text-decoration: none;
+					}
+					.bnt-clear-wr .btn-clear:hover {
+						background: #7d95ac;
+  						text-decoration: none;
+					}
+
+	.footer {
+		background: #eff3f7 url(../img/gradient_line.png) top center no-repeat;
+		height: 93px;
+		overflow: hidden;
+		margin: -93px 0 0 0;
+
+	}
+		.footer-in {     
+			width: 960px;
+			margin: 0 auto;
+			padding: 32px 0;      
+			text-align: center;
+		}
+		.authorize {
+			float: left;
+			width: 80px;
+		}
+			.authorize a {
+				display: block;
+				width: 20px;
+				height: 32px;
+				margin: 0 auto;
+				background: url(../img/spritesheet.png);
+				background-position: -15px -661px;
+			} 
+			.authorize span {
+				display: block;
+				position: relative;
+				text-indent: -9999px;
+			}
+		.copyright {
+			width: 150px;
+			margin: 0 auto;
+			padding: 11px 0 0 0;
+		}            

@@ -1,12 +1,296 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (-o-min-device-pixel-ratio: 5/4),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+html, body {
+	height: 100%;  
+}
 body {
-	background: url(../img/bg.png);
 	font-family: fira_sansbook;
 	font-weight: normal;
 	font-style: normal;
 	color: #4a545d;
 }
 ul, li {
-	list-style: none;
+	list-style: none; 
 	margin: 0px;
 	padding: 0px;
 }
@@ -24,6 +308,9 @@ h1, h2, h3, h4, h5, h6 {
 input, textarea {
 	border:none;
 	background: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 .left, .section-heading {
 }
@@ -40,7 +327,13 @@ input, textarea {
 	font-size: 13px;
 }
 .wrap {
+	background: url(../img/bg.png);
 	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+  	min-height: 100%;
+  	padding-bottom: 113px;
 }
 	.header {
 		background: #eff3f7 url(../img/gradient_line.png) bottom center no-repeat;
@@ -403,6 +696,7 @@ input, textarea {
 	
 	.contact-me {
 		padding: 0 0 30px 0;
+		overflow: hidden;
 	}
 		.contact-me .question {
 			color: #fff;
@@ -419,18 +713,23 @@ input, textarea {
 			margin: 0 auto;
 			font-family: fira_sanslight;
 		}
-			.contact-form .wr-input {
+			.contact-form .input, .contact-form .textarea {
 				border-style:solid; 
 			 	font-size:13px; 
 			 	border-width:1px; 
 			 	-webkit-border-radius:3px; 
 			 	        border-radius:3px; 
+			 	background-color:#fbfcfd; 
+			 	border-color:#48cbe8; 
+			 	color:#48cbe8; 
+			 	padding:9px;
+			}
+			.contact-form .input.error, .contact-form .textarea.error {
 			 	background-color:#fad2d1; 
 			 	border-color:#f97f76; 
 			 	color:#48cbe8; 
-			 	padding:8px;
-			 	position: relative;
 			}
+
 			.contact-form label {
 				font-size: 19px;
 				color: #959aa8;
@@ -449,51 +748,15 @@ input, textarea {
 				float: left;
 				width: 192px;
 			}
-			.contact-form #name-error  {
-				position: absolute;
-				left: -138px;
-				top: 7px;
-				color: #fff;
-				font-family: fira_sansbook;
-				font-size: 13px;
-				background: #f97e76;
-				-webkit-border-radius: 3px;
-				        border-radius: 3px;
-				padding: 4px 14px;
-			}
+
 			.contact-form .email {
 				float: right;
 				width: 192px;
-			}
-			.contact-form #email-error  {
-				position: absolute;
-				right: -150px;
-				top: 7px;
-				color: #fff;
-				font-family: fira_sansbook;
-				font-size: 13px;
-				background: #f97e76;
-				-webkit-border-radius: 3px;
-				        border-radius: 3px;
-				padding: 4px 14px;
 			}
 			.contact-form .text {
 				float: left;
 				width: 100%;
 				margin: 14px 0 0 0;
-			}
-
-			.contact-form #text-error  {
-				position: absolute;
-				left: -107px;
-				top: 77px;
-				color: #fff;
-				font-family: fira_sansbook;
-				font-size: 13px;
-				background: #f97e76;
-				-webkit-border-radius: 3px;
-				        border-radius: 3px;
-				padding: 4px 14px;
 			}
 				.text textarea {
 					width: 364px;
@@ -503,18 +766,10 @@ input, textarea {
 				width: 100%;
 				margin: 14px 0 0 0;
 			}
-			.contact-form #captcha-error  {
-				position: absolute;
-				right: -138px;
-				top: 2px;
-				color: #fff;
-				font-family: fira_sansbook;
-				font-size: 13px;
-				background: #f97e76;
-				-webkit-border-radius: 3px;
-				        border-radius: 3px;
-				padding: 4px 14px;
-			}
+
+				.contact-form .captcha input  {
+					padding: 4px 9px;
+				}
 				.captcha-img {
 					float: left;
 					width: 192px;
@@ -529,11 +784,8 @@ input, textarea {
 				.captcha-input {
 					float: right;
 					width: 192px;
-					padding: 21px 0 0 0px;
+					padding: 20px 0 0 0px;
 				}
-					.captcha-input .wr-input {
-						padding: 3px 8px;
-					} 
 			
 			.contact-form .buttons {
 				float: left;
@@ -581,11 +833,36 @@ input, textarea {
 
 	.footer {
 		background: #eff3f7 url(../img/gradient_line.png) top center no-repeat;
-		padding: 32px 0;
+		height: 93px;
+		overflow: hidden;
+		margin: -93px 0 0 0;
 
 	}
 		.footer-in {     
 			width: 960px;
-			margin: 0 auto;      
+			margin: 0 auto;
+			padding: 32px 0;      
 			text-align: center;
+		}
+		.authorize {
+			float: left;
+			width: 80px;
+		}
+			.authorize a {
+				display: block;
+				width: 20px;
+				height: 32px;
+				margin: 0 auto;
+				background: url(../img/spritesheet.png);
+				background-position: -15px -661px;
+			} 
+			.authorize span {
+				display: block;
+				position: relative;
+				text-indent: -9999px;
+			}
+		.copyright {
+			width: 150px;
+			margin: 0 auto;
+			padding: 11px 0 0 0;
 		}            
