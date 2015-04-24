@@ -348,7 +348,7 @@ input, textarea {
 			text-decoration: none;
 			display: block;
 		}
-			.logo span {
+			.logo .logoname {
 				text-indent: -9999px;
 				display: block;
 				width: 0px;
@@ -359,30 +359,30 @@ input, textarea {
 			margin: 0px;
 			padding: 0px;
 		}
-			.socials li {
+			.socials .vk-ico, .socials .tw-ico, .socials .fb-ico, .socials .git-ico  {
 				list-style:none;
 				float: left;
 				margin: 0px 0px 0px 24px;
 				padding: 0px;
 			}
-			.socials li a {
+			.socials .social-link {
 				text-indent: -9999px;
 				display: block;
 				height: 47px;
 				width: 47px;
 				background: url(../img/spritesheet.png) no-repeat;
 			}
-			.socials .vk-ico a { background-position: -15px -1090px; }
-			.socials .vk-ico a:hover { background-position: -15px -1167px; }
+			.socials .vk-ico .social-link { background-position: -15px -1090px; }
+			.socials .vk-ico .social-link:hover { background-position: -15px -1167px; }
 
-			.socials .tw-ico a { background-position: -15px -882px; }
-			.socials .tw-ico a:hover { background-position:-15px -959px; }
+			.socials .tw-ico .social-link { background-position: -15px -882px; }
+			.socials .tw-ico .social-link:hover { background-position:-15px -959px; }
 
-			.socials .fb-ico a { background-position: -15px -194px; }
-			.socials .fb-ico a:hover { background-position: -15px -271px; }
+			.socials .fb-ico .social-link { background-position: -15px -194px; }
+			.socials .fb-ico .social-link:hover { background-position: -15px -271px; }
 
-			.socials .git-ico a { background-position: -15px -348px; }
-			.socials .git-ico a:hover { background-position: -15px -425px; }
+			.socials .git-ico .social-link { background-position: -15px -348px; }
+			.socials .git-ico .social-link:hover { background-position: -15px -425px; }
 
 .main {
 	width: 960px;
@@ -401,33 +401,33 @@ input, textarea {
 		overflow: hidden;
 		font-size: 21px;
 	}
-	.menu li {
+	.menu .menu-item {
 		padding: 0px 9px 0px 9px;
 	}
-	.menu li a {
+	.menu .menu-item-link {
 		display: block;
 		padding: 27px 0 23px 17px;
 		background: url(../img/menu_item_bottom.gif) bottom repeat-x;
 	}
-	.menu li a span {
+	.menu .menu-item-link .m-link-span {
 		display: block;
 		line-height: 23px;
 	}
-	.menu li.active {
+	.menu .active {
 		background: #3ba8c0;
 		font-size: 22px;
 		margin: -2px 0 0 0;
 	}    
-	.menu li.active a {
+	.menu .active .menu-item-link {
 		padding: 29px 0 23px 17px;
 	}     
-	.menu li:hover a {
+	.menu .menu-item:hover .menu-item-link {
 		color: #3ba8c0;
 	}
-	.menu li.active a {
+	.menu .active .menu-item-link, .menu .active:hover .menu-item-link {
 		color: #fff;
 	}
-	.menu li.last a, .menu li.active a {
+	.menu .last .menu-item-link, .menu .active .menu-item-link {
 		background: none;
 	}
 	.contacts {
@@ -439,13 +439,13 @@ input, textarea {
 		overflow: hidden;
 		color: #fff;
 	}
-	.contacts ul {
+	.contacts .contacts-list {
 		font-size: 17px;
 	}
-	.contacts a:hover {
+	.contacts .c-l-link:hover {
 		text-decoration: underline;
 	}
-		.contacts li {
+		.contacts .c-list-item {
 			padding: 9px 0 7px 60px;
 			background: url(../img/spritesheet.png) no-repeat;
 		}
@@ -478,7 +478,7 @@ input, textarea {
 	.content .section-heading.clearfix {
 
 	}
-	.content .section-heading span {
+	.content .section-heading .s-h-span {
 		display: block;
 		float: left;
 		background: url(../img/menu_item_bottom.gif) bottom repeat-x;
@@ -507,19 +507,19 @@ input, textarea {
 		.about-me {
 			width: 365px;   
 		}
-			.skill-list {
+			.about-me-list {
 				font-size: 15px;
 			}
-			.skill-list li {
+			.about-me-list .about-me-item {
 				margin: 0px 0px 10px 0px;
 			}
-			.skill-list .label {
+			.about-me-list .label {
 				font-family: fira_sansmedium;
 				font-size: 17px;
 				margin: 0 10px 0 0;
 				float: left;
 			}
-				.skill-list ul {
+				.about-me-list .skill-list {
 					float: left;
 					width: 50%;
 					color: #fff;
@@ -528,7 +528,7 @@ input, textarea {
 					margin: 3px 0 0 0;
 					line-height: normal;
 				}
-				.skill-list ul li {
+				.about-me-item  .skill-list-item {
 					float: left;
 					background: url(../img/skills_bg_line.gif) center repeat-x;
 					-webkit-border-radius: 3px;
@@ -607,7 +607,8 @@ input, textarea {
 				     -o-transition: all 0.3s ease-in 0s;
 				        transition: all 0.3s ease-in 0s;
 			}
-			.hover-box a {
+			.hover-box .l-box-link { display: block; height:100%; width: 100%; }
+			.hover-box .l-box-link-span {
 				color: #fff;
 				display: inline-block;
 				padding: 0 5px 0 5px;
@@ -730,12 +731,12 @@ input, textarea {
 			 	color:#48cbe8; 
 			}
 
-			.contact-form label {
+			.contact-form .input-label {
 				font-size: 19px;
 				color: #959aa8;
 				display: block;
 			}
-			.contact-form input:focus, .contact-form textarea:focus {
+			.contact-form .input:focus, .contact-form .textarea:focus {
 				outline: none;
 			}
 			.contact-form .input {
@@ -758,16 +759,13 @@ input, textarea {
 				width: 100%;
 				margin: 14px 0 0 0;
 			}
-				.text textarea {
-					width: 364px;
-				}
 			.contact-form .captcha {
 				float: left;
 				width: 100%;
 				margin: 14px 0 0 0;
 			}
 
-				.contact-form .captcha input  {
+				.contact-form .captcha .input  {
 					padding: 4px 9px;
 				}
 				.captcha-img {
@@ -848,7 +846,7 @@ input, textarea {
 			float: left;
 			width: 80px;
 		}
-			.authorize a {
+			.authorize .auth-link {
 				display: block;
 				width: 20px;
 				height: 32px;
@@ -856,7 +854,7 @@ input, textarea {
 				background: url(../img/spritesheet.png);
 				background-position: -15px -661px;
 			} 
-			.authorize span {
+			.authorize .auth-link-span {
 				display: block;
 				position: relative;
 				text-indent: -9999px;
