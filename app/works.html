@@ -6,7 +6,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Мои работы - Сайт-портфолио веб-разработчика Погребного Максимаа</title>
+	<title>Мои работы - Сайт-портфолио веб-разработчика Погребного Максима</title>
 	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
@@ -140,18 +140,63 @@
 </div>
 	<footer class="footer">
 		<div class="footer-in clearfix">
-			<div class="authorize"><a class="auth-link" href="/"><span class="auth-link-span">Авторизация</span></a></div>
+			<div class="authorize"><a class="auth-link" href="auth.html"><span class="auth-link-span">Авторизация</span></a></div>
 			<div class="copyright">&copy; 2015, Погребной М. С.</div>
 		</div>
 	</footer>
+	<div id="add-project-popup">
+		<div class="popup-in">
+			<div class="heading clearfix">
+				Добавление проекта
+				<div class="b-close"><span class="b-close-span">Закрыть</span></div>
+			</div>
+			<div class="form-body add-p">
+				<div class="form-body-in">
+					<form id="add-project" action="/" novalidate="novalidate">
+						<div class="row-form project-name">
+							<label class="input-label" for="project_name">Название проекта</label>
+							<div class="wr-input">
+								<input class="required input" type="text" name="project_name" size="22" placeholder="Введите название">
+							</div>
+						</div>
+						<div class="row-form project-img">
+							<label class="input-label" for="project_img">Название проекта</label>
+							<div class="wr-input">
+								<input class="required input" type="file" name="project_img" size="22" placeholder="Загрузите изображение">
+							</div>
+						</div>
+						<div class="row-form project-url">
+							<label class="input-label" for="project_url">Название проекта</label>
+							<div class="wr-input">
+								<input class="required input" type="text" name="project_url" size="22" placeholder="Добавьте ссылку">
+							</div>
+						</div>
+						<div class="row-form text">
+							<label class="input-label" for="text">Описание</label>
+							<div class="wr-input">
+								<textarea class="required textarea" name="text" id="textarea" cols="49" rows="4" placeholder="Пара слов о Вашем проекте"></textarea>
+							</div>
+						</div>
+						<div class="row-form">
+							<div class="btn-send-wr">
+								<input class="btn-send" type="submit" value="Добавить">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- build:js js/vendor.js -->
 	<!-- bower:js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/jquery-validation/dist/jquery.validate.js"></script>
 	<script src="bower/tooltipster/js/jquery.tooltipster.min.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:js js/main.js -->
+	<script src="js/jquery.bpopup.min.js"></script>
 	<script src="js/main.js"></script>
 	<!-- endbuild -->
 </body>

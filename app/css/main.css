@@ -558,13 +558,13 @@ input, textarea {
 			line-height: 20px;
 		} 
 		.short-dscr.bag {
-			background-position: -11px -75px;
+			background: url(../img/briefcase_ico.png) left top no-repeat;
 		}
 		.short-dscr.cocked_hat {
-			background-position: -14px -137px;
+			background: url(../img/cocked_hat_ico.png) left top no-repeat;
 		}
 		.short-dscr.paper {
-			background-position: -6px -723px;
+			background: url(../img/paper_ico.png) 9px top no-repeat;
 		}
 			.short-dscr-hd {
 				font-size: 17px
@@ -714,7 +714,10 @@ input, textarea {
 			margin: 0 auto;
 			font-family: fira_sanslight;
 		}
-			.contact-form .input, .contact-form .textarea {
+		.form-body .row-form {
+			margin: 10px 0 0 0;
+		}
+			.form-body .input, .form-body .textarea {
 				border-style:solid; 
 			 	font-size:13px; 
 			 	border-width:1px; 
@@ -725,24 +728,24 @@ input, textarea {
 			 	color:#48cbe8; 
 			 	padding:9px;
 			}
-			.contact-form .input.error, .contact-form .textarea.error {
+			.form-body .input.error, .form-body .textarea.error {
 			 	background-color:#fad2d1; 
 			 	border-color:#f97f76; 
 			 	color:#48cbe8; 
 			}
 
-			.contact-form .input-label {
+			.form-body .input-label {
 				font-size: 19px;
 				color: #959aa8;
 				display: block;
 			}
-			.contact-form .input:focus, .contact-form .textarea:focus {
+			.form-body .input:focus, .form-body .textarea:focus {
 				outline: none;
 			}
-			.contact-form .input {
+			.form-body .input {
 				width: 100%
 			}
-			.contact-form .textarea {
+			.form-body .textarea {
 				width: 100%;
 			}
 			.contact-form .name {
@@ -792,10 +795,10 @@ input, textarea {
 				padding: 0 0 10px 0;
 				font-family: fira_sansbook;
 			}
-				.buttons .bnt-send-wr {
+				.buttons .btn-send-wr {
 					float: left;
 				}
-					.bnt-send-wr .btn-send {
+					.btn-send-wr .btn-send {
 						-webkit-border-radius: 3;
 						  border-radius: 3px;
 						  -webkit-box-shadow: 0px 3px 0px #3ba8c0;
@@ -806,14 +809,14 @@ input, textarea {
 						  padding: 0px 25px 1px 21px;
 						  text-decoration: none;
 					}
-					.bnt-send-wr .btn-send:hover {
+					.btn-send-wr .btn-send:hover {
 						background: #44bed9;
   						text-decoration: none;
 					}
-				.buttons .bnt-clear-wr {
+				.buttons .btn-clear-wr {
 					float: right;
 				}
-					.bnt-clear-wr .btn-clear {
+					.btn-clear-wr .btn-clear {
 						-webkit-border-radius: 3;
 						  border-radius: 3px;
 						  -webkit-box-shadow: 0px 3px 0px #687b8f;
@@ -824,7 +827,7 @@ input, textarea {
 						  padding: 0px 28px 1px 28px;
 						  text-decoration: none;
 					}
-					.bnt-clear-wr .btn-clear:hover {
+					.btn-clear-wr .btn-clear:hover {
 						background: #7d95ac;
   						text-decoration: none;
 					}
@@ -853,6 +856,9 @@ input, textarea {
 				margin: 0 auto;
 				background: url(../img/spritesheet.png);
 				background-position: -15px -661px;
+			}
+			.authorize .auth-link:hover {
+				background-position: -15px -599px;
 			} 
 			.authorize .auth-link-span {
 				display: block;
@@ -863,4 +869,85 @@ input, textarea {
 			width: 150px;
 			margin: 0 auto;
 			padding: 11px 0 0 0;
-		}            
+		} 
+
+#add-project-popup {
+	background-color: #eff3f7;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 362px;
+	display: none;
+}
+#add-project-popup .heading {
+	color:#fff;
+	background-color: #48cbe8;
+	font-size: 25px;
+	font-family: "fira_sansbook";
+	border-bottom: 9px solid #67dffa;
+	padding: 2px 10px;
+} 
+#add-project-popup .b-close {
+	float: right;
+	background: url(../img/spritesheet.png);
+	background-position: -15px -1244px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 5px 3px 0 0;
+}
+#add-project-popup .b-close-span {
+	position: relative;
+	display: block;
+	text-indent: -9999px;
+}
+#add-project-popup .add-p {
+	padding: 9px 20px;
+}
+	.add-p .btn-send-wr {
+		text-align: center;
+		padding: 10px 0 20px 0;
+	}
+.auth-wr {
+	width: 590px;
+	height: 484px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -242px 0 0 -295px;
+	background-color: #eff3f7;
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+} 
+	.auth-wr .auth-heading {
+		color:#fff;
+		background-color: #48cbe8;
+		font-size: 40px;
+		font-family: "fira_sansbook";
+		border-bottom: 15px solid #67dffa;
+		padding: 15px 10px;
+	}
+	.auth-wr .form-body {
+		width: 424px;
+		margin: 0 auto;
+	}
+	.auth-wr .form-body .row-form {
+		margin: 18px 0 0 0;
+	}
+	.auth-wr .input-label {
+		font-size: 36px;
+		font-family: fira_sanslight;
+	}
+	.auth-wr .input {
+		font-size: 17px;
+		padding: 16px;
+	}
+	.auth-wr .btn-send-wr {
+		padding: 27px 0 0px 0;
+	}
+	.auth-wr .btn-send {
+		font-size: 36px;
+		border-radius: 6px;
+		padding: 0 62px;
+	}

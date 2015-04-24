@@ -6,7 +6,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Связаться со мной - Сайт-портфолио веб-разработчика Погребного Максимаа</title>
+	<title>Связаться со мной - Сайт-портфолио веб-разработчика Погребного Максима</title>
 	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
@@ -84,7 +84,7 @@
 					<div class="question">
 						У вас интересный проект? Напишите мне
 					</div>
-					<div class="contact-form clearfix">
+					<div class="form-body contact-form clearfix">
 						<form id="contactme" action="/" novalidate="novalidate">
 							<div class="name">
 								<label class="input-label" for="name">Имя</label>
@@ -106,7 +106,7 @@
 							</div>
 
 							<div class="captcha clearfix">
-							<label for="captcha">Введите код, указанный на кртинке</label>	
+							<label class="input-label" for="captcha">Введите код, указанный на кртинке</label>	
 							<div class="captcha-img">
 								<img src="img/caocha.png" alt="">
 							</div>
@@ -117,10 +117,10 @@
 							</div>
 							</div>
 							<div class="buttons clearfix">
-								<div class="bnt-send-wr">
+								<div class="btn-send-wr">
 									<input class="btn-send" type="submit" value="Отправить">
 								</div>
-								<div class="bnt-clear-wr">
+								<div class="btn-clear-wr">
 									<input class="btn-clear" type="reset" value="Очистить">
 								</div>
 							</div>
@@ -134,7 +134,7 @@
 </div>
 <footer class="footer">
 		<div class="footer-in clearfix">
-			<div class="authorize"><a lass="auth-link" href="/"><span class="auth-link-span">Авторизация</span></a></div>
+			<div class="authorize"><a class="auth-link" href="auth.html"><span class="auth-link-span">Авторизация</span></a></div>
 			<div class="copyright">&copy; 2015, Погребной М. С.</div>
 		</div>
 	</footer>
@@ -143,9 +143,11 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/jquery-validation/dist/jquery.validate.js"></script>
 	<script src="bower/tooltipster/js/jquery.tooltipster.min.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:js js/main.js -->
+	<script src="js/jquery.bpopup.min.js"></script>
 	<script src="js/main.js"></script>
 	<!-- endbuild -->
 </body>
