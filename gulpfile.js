@@ -1,13 +1,14 @@
-var gulp = require("gulp"),
+var
+	gulp = require("gulp"),
 	connect = require("gulp-connect"),
 	opn = require("opn"),
-  autoprefixer = require('gulp-autoprefixer'),
-  concatCss = require('gulp-concat-css'),
-  useref = require('gulp-useref'),
-  gulpif = require('gulp-if'),
-  uglify = require('gulp-uglify'),
-  minifyCss = require('gulp-minify-css'),
-  wiredep = require('wiredep').stream;
+	autoprefixer = require('gulp-autoprefixer'),
+	concatCss = require('gulp-concat-css'),
+	useref = require('gulp-useref'),
+	gulpif = require('gulp-if'),
+	uglify = require('gulp-uglify'),
+	minifyCss = require('gulp-minify-css'),
+	wiredep = require('wiredep').stream;
 
 
 

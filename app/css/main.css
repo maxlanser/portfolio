@@ -328,18 +328,19 @@ input, textarea {
 }
 .wrap {
 	background: url(../img/bg.png);
-	margin: 0 auto;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
   	min-height: 100%;
   	padding-bottom: 113px;
+  	min-width: 960px;
 }
 	.header {
 		background: #eff3f7 url(../img/gradient_line.png) bottom center no-repeat;
 	}
 	.header-in {
-		width: 1200px;
+		max-width: 1200px;
+		min-width: 960px;
 		margin: 0 auto;
 		padding: 35px 0 37px 0;
 	}
@@ -467,6 +468,7 @@ input, textarea {
 .content {
 	width: 650px;
 	float: right;
+	overflow: hidden;
 }
 	.content .section-heading {
 		font-size: 27px;
@@ -669,6 +671,10 @@ input, textarea {
 				font-family: fira_sanslight;
 				font-size: 15px;
 				line-height: 18px;
+				position: relative;
+				height: 36px;
+				max-height: 36px;
+				overflow: hidden;
 			}
 			.item.add {
 				background: #edf8fc;
@@ -837,7 +843,7 @@ input, textarea {
 		height: 93px;
 		overflow: hidden;
 		margin: -93px 0 0 0;
-
+		min-width: 960px;
 	}
 		.footer-in {     
 			width: 960px;

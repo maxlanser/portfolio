@@ -141,7 +141,7 @@ $("#contactme").validate({
                $('#add-project #textarea').tooltipster('hide');
             },
             onOpen: function() { 
-
+				
             }
         });
     });
@@ -167,4 +167,5 @@ $("#contactme").validate({
              }
     });
     $('input, textarea').placeholder();
+    $('#add-project-popup input[type=file]').styler();
 });
