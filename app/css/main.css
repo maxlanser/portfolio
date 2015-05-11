@@ -723,6 +723,9 @@ input, textarea {
 		.form-body .row-form {
 			margin: 10px 0 0 0;
 		}
+			.form-body div.input {
+				
+			}
 			.form-body .input, .form-body .textarea {
 				border-style:solid; 
 			 	font-size:13px; 

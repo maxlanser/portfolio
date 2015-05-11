@@ -105,13 +105,16 @@ $("#contactme").validate({
             return false;
              }
     });
-    $("#add-project").validate({
+    var addprojectform = $("#add-project").validate({
         errorPlacement: function (error, element) {
                 $(element).tooltipster('update', $(error).text());
                 $(element).tooltipster('show');
+                $('.jq-file').addClass('error');
         },
+
         success: function (label, element) {
             $(element).tooltipster('hide');
+            $('.jq-file').removeClass('error');
         },
         rules: {
             project_name: "required",
@@ -141,7 +144,7 @@ $("#contactme").validate({
                $('#add-project #textarea').tooltipster('hide');
             },
             onOpen: function() { 
-				
+                	
             }
         });
     });
@@ -166,6 +169,13 @@ $("#contactme").validate({
             return false;
              }
     });
+    $('.b-close-span').on('click', function() {
+        addprojectform.resetForm();
+        document.getElementById("add-project").reset();
+        $('.jq-file').removeClass('error');
+    })
     $('input, textarea').placeholder();
-    $('#add-project-popup input[type=file]').styler();
+    if( $('#add-project-popup input[type=file]').length )  {
+        $('#add-project-popup input[type=file]').styler();
+    }
 });
